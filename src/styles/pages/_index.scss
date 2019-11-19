@@ -4,6 +4,7 @@
     background-size: cover;
     background-position: top;
     position: relative;
+    background-attachment: fixed;
 
     &::before {
         background-color: rgba(0, 0, 0, 0.7);

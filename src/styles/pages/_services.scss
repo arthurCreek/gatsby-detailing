@@ -1,0 +1,25 @@
+/*********************
+
+** SERVICES SECTION
+
+**********************/
+.services__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80rem;
+    margin: 0 auto 0 auto;
+    font-size: 2em;
+}
+
+.services__grid {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.services__grid-item {
+    margin: 5rem;
+}
