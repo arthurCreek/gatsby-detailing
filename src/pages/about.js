@@ -3,8 +3,8 @@ import Layout from "../components/layout"
 
 const About = () =>  (
     <Layout>
-        <div className="hero-about">
-            <div className="hero-about__text-box">
+        <div className="hero-sub">
+            <div className="hero-sub__text-box">
                     <h1 className="hero-primary">
                     <span className="hero-primary--main">About Our Passion</span>
                 </h1>

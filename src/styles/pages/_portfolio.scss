@@ -3,17 +3,13 @@
 ** ABOUT SECTION
 
 **********************/
-.about-container {
+.portfolio-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 100%;
     width: 80rem;
     margin: 0 auto 0 auto;
     font-size: 2em;
-}
-
-.about-paragraph {
-    margin-bottom: 2rem;
-    line-height: 1.5;
 }
