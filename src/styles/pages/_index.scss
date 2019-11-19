@@ -27,3 +27,139 @@
         text-align: center;
     }
 }
+
+/*********************
+
+** FINEST QUALITY SECTION
+
+**********************/
+.index__finest-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: $off-white;
+    font-size: 2.5em;
+}
+
+.index__finest-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.index__finest-footer {
+
+    // need to align to the left
+}
+
+
+
+/*********************
+
+** MOST POPULAR SECTION
+
+**********************/
+
+.index__popular-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 2.5em;
+}
+
+.index__popular-body {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*********************
+
+** BEST IN THE BUSINESS SECTION
+
+**********************/
+.index__best-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: $off-white;
+    font-size: 2.5em;
+}
+
+.index__best-header {
+    margin-bottom: 20rem;
+    margin-top: -20rem;
+}
+
+.index__best-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.index__best-body--info-row {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+}
+
+/*********************
+
+** PORTFOLIO SECTION
+
+**********************/
+.index__portfolio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 2.5em;
+}
+
+
+
+/*********************
+
+** CUSTOMERS SECTION
+
+**********************/
+.index__customers-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: $off-white;
+    font-size: 2.5em;
+}
+
+.index__customers-body {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*********************
+
+** BOOK SECTION
+
+**********************/
+.index__call-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 2.5em;
+}
+
+.index__call-info {
+    display: flex;
+    flex-direction: row;
+}
