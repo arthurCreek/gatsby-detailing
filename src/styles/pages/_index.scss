@@ -179,7 +179,17 @@
     padding: 6rem;
 }
 
-.index__call-info {
+.index__call-info--call-location {
     display: flex;
     flex-direction: row;
+}
+
+.index__call-info--item {
+    margin-right: $xl-size;
+    margin-top: $m-size;
+}
+
+.index__call-info {
+    display: flex;
+    flex-direction: column;
 }

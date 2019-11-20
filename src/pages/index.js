@@ -147,20 +147,25 @@ const IndexPage = () => (
           <div className="index__call-book">
             <h2>Book with us today</h2>
             <div className="index__call-info">
-              <div className="index__call-info--item">
-                <h3>Call us</h3>
-                <p>555-555-555</p>
+              <div className="index__call-info--call-location">
+                <div className="index__call-info--item">
+                  <h3>Location</h3>
+                  <p>123 Alphabet</p>
+                  <p>City, State Zip</p>
+                </div>
+                <div className="index__call-info--item">
+                  <h3>Call us</h3>
+                  <p>555-555-555</p>
+                </div>
               </div>
-              <div className="index__call-info--item">
-                <h3>Location</h3>
-                <p>123 Alphabet</p>
-                <p>City, State Zip</p>
-              </div>
-              <div className="index__call-info--item">
-                <h3>Hours</h3>
-                <p>Monday-Friday: 8am-5pm</p>
-                <p>Saturday: 8am-7pm</p>
-                <p>Sunday: 9am-2pm</p>
+
+              <div className="index__call-info--hours">
+                <div className="index__call-info--item">
+                  <h3>Hours</h3>
+                  <p>Monday-Friday: 8am-5pm</p>
+                  <p>Saturday: 8am-7pm</p>
+                  <p>Sunday: 9am-2pm</p>
+                </div>
               </div>
             </div>
           </div>
