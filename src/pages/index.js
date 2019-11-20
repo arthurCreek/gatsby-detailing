@@ -28,11 +28,11 @@ const IndexPage = () => (
           <div className="index__finest-body--text">
             <div className="index__finest-body--text-item">
               <h3>You're going to fall in love again</h3>
-              <p>lasdasd sdn as d hjs j as dja js dajs djha sdj asdj ash</p>
+              <p>We help bring life and shine back to your prized possesion</p>
             </div>
             <div className="index__finest-body--text-item">
               <h3>Keep your prized possesion healthy</h3>
-              <p>adh asjc sachsachjahj chja sjhc hja cjha sj cacs</p>
+              <p>Protect your exterior from acid rain and interior from dirt and stains</p>
             </div>
           </div>
           <div className="index__finest-body--images">
@@ -80,21 +80,21 @@ const IndexPage = () => (
               <p className="index__best-body--p">Icon #1</p>
               <div className="index__best-body--info-row-text">
                 <h3>Perfect Quality</h3>
-                <p>asdasdas d asdasd asd </p>
+                <p>Quality you expect from the best</p>
               </div>
             </div>
             <div className="index__best-body--info-row">
               <p className="index__best-body--p">Icon #2</p>
               <div className="index__best-body--info-row-text">
                 <h3>Best Products Used</h3>
-                <p>asdasdas d asdasd asd </p>
+                <p>All products are top notch for best results</p>
               </div>
             </div>
             <div className="index__best-body--info-row">
               <p className="index__best-body--p">Icon #3</p>
               <div className="index__best-body--info-row-text">
                 <h3>Professionals with a Passion</h3>
-                <p>asdasdas d asdasd asd </p>
+                <p>We take care of your car like it's our own</p>
               </div>
             </div>
           </div>
@@ -121,15 +121,20 @@ const IndexPage = () => (
         <div className="index__customers-body">
           <div className="index__customers-body-item">
             <p>Picture here 1</p>
-            <p>ijansdj ka ns   sdhj a  s</p>
+            <p>Based on the reviews from others, I really wanted to take my vehicle to Gatsby.  From first call to the finished result was flawless,
+            they got my car in tip top shape in no time. They were very helpful in explaining the different 
+            options and flexible in dealing with my schedule.</p>
           </div>
           <div className="index__customers-body-item">
             <p>Picture here 2</p>
-            <p>ijansdj ka ns   sdhj a  s</p>
+            <p>Arthur and his team at Gatsby are the best of the best. I wish I would've took before and after pictures so I could've post how 
+            amazing their work is. Arthur and his team never disappoint.</p>
           </div>
           <div className="index__customers-body-item">
             <p>Picture here 3</p>
-            <p>ijansdj ka ns   sdhj a  s</p>
+            <p>I had the privilege of working with Arthur in trying to remove a lingering odor in my vehicle. He was very quick to respond and 
+            fit me into his schedule. He was very professional and was able to successfully remove the odor from the car without issue.  
+            I wouldn't hesitate to reach out and work with the Gatsby team again.</p>
           </div>
         </div>
       </div>
