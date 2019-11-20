@@ -63,9 +63,34 @@ const IndexPage = () => (
           <h2>Most Popular Services</h2>
         </div>  
         <div className="index__popular-body">
-          <p>Card 1</p>
-          <p>Card 2</p>
-          <p>Card 3</p>
+          <div class="feature-box">
+            <h2>Level 2 Detail</h2>
+            <h3>Exterior and Interior</h3>
+            <p>In addition to Level 1</p>
+            <ul>
+                <li>Thorough Interior Vacuum</li>
+                <li>Thorough Wipe Down</li>
+            </ul>
+            <p>Price: $120-140</p>
+          </div>
+          <div class="feature-box">
+            <h2>Level 3 Detail</h2>
+            <h3>Detail with Added Protection</h3>
+            <p>In addition to Level 2</p>
+            <ul>
+                <li>Ceramic Spray Sealant</li>
+            </ul>
+            <p>Price: $160-200</p>
+          </div>
+          <div class="feature-box">
+            <h2>Level 4 Detail</h2>
+            <h3>Light Clay Bar</h3>
+            <p>In addition to Level 3</p>
+            <ul>
+                <li>Clay Bar treatment</li>
+            </ul>
+            <p>Price: $240-280</p>
+          </div>
         </div>
         <div className="index__popular-footer">
           <p>Button to: Discover All Services</p>
