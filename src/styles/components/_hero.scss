@@ -1,4 +1,6 @@
-.hero, .hero-sub {
+.hero, 
+.hero-sub, 
+.hero-sub--contact {
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(.././images/gtr.jpg);
     background-size: cover;
@@ -22,13 +24,18 @@
     
     &__text-box {
         position: absolute;
-        top: 40%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
     }
+
 }
 
 .hero-sub {
     height: 70vh;
+}
+
+.hero-sub--contact {
+    height: 60vh;
 }
