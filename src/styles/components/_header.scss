@@ -1,10 +1,16 @@
 .header {
-    background: #f4f4f4;
+    // background: #f4f4f4;
+    // background: #090C0E;
+    background: #f7f7f7;
     position: fixed;
     z-index: 100;
-    width: 80%;
-    margin-top: $m-size;
-    left: 10%;
+    width: 70%;
+    height: 85px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: $m-size auto 0 auto;
     border-radius: 25px;
 
 }
@@ -22,4 +28,6 @@
 .header__list-item {
     padding-top: 10px;
     text-decoration: none;
+    // color: white;
+    color: #090C0E;
 }
