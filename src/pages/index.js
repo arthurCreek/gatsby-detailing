@@ -3,6 +3,9 @@ import React from "react"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import wash_1 from '../images/wash_1.jpg'
+import wash_2 from '../images/wash_2.jpg'
+import wash_3 from '../images/wash_3.jpg'
 
 const IndexPage = () => (
   <Layout>
@@ -36,9 +39,15 @@ const IndexPage = () => (
             </div>
           </div>
           <div className="index__finest-body--images">
-            <p>Image 1</p>
-            <p>Image 2</p>
-            <p>Image 3</p>
+              <img  alt="Photo 1"
+                    class="index__finest-body--images-photo index__finest-body--images-photo-p1"
+                    src={wash_1} />
+              <img  alt="Photo 2"
+                    class="index__finest-body--images-photo index__finest-body--images-photo-p2"
+                    src={wash_2} />
+              <img  alt="Photo 3"
+                    class="index__finest-body--images-photo index__finest-body--images-photo-p3"
+                    src={wash_3} />
           </div>
         </div>
         <div className="index__finest-footer">
