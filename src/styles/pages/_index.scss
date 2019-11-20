@@ -43,13 +43,22 @@
 ** MOST POPULAR SECTION
 
 **********************/
-
+.index__popular {
+    height: 100vh;
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(.././images/gtr.jpg);
+    background-image: linear-gradient(rgba(251, 86, 3, 0.6), rgba(251, 86, 3, 0.3)),url(.././images/mercedez.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    background-attachment: fixed;
+}
 .index__popular-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
     font-size: 2.5em;
+    color: white;
 }
 
 .index__popular-header {
@@ -107,6 +116,17 @@
 ** PORTFOLIO SECTION
 
 **********************/
+.index__portfolio {
+    height: 100vh;
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(.././images/gtr.jpg);
+    background-image: linear-gradient(rgba(251, 86, 3, 0.6), rgba(251, 86, 3, 0.3)),url(.././images/ferrari.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    background-attachment: fixed;
+    color: white;
+}
+
 .index__portfolio-container {
     display: flex;
     flex-direction: column;
