@@ -25,11 +25,15 @@ const IndexPage = () => (
           <h2>The Finest Quality from Gatsby</h2>
         </div>
         <div className="index__finest-body">
-          <div className="index__finext-body--text">
-            <h3>You're going to fall in love again</h3>
-            <p>lasdasd sdn as d hjs j as dja js dajs djha sdj asdj ash</p>
-            <h3>Keep your prized possesion healthy</h3>
-            <p>adh asjc sachsachjahj chja sjhc hja cjha sj cacs</p>
+          <div className="index__finest-body--text">
+            <div className="index__finest-body--text-item">
+              <h3>You're going to fall in love again</h3>
+              <p>lasdasd sdn as d hjs j as dja js dajs djha sdj asdj ash</p>
+            </div>
+            <div className="index__finest-body--text-item">
+              <h3>Keep your prized possesion healthy</h3>
+              <p>adh asjc sachsachjahj chja sjhc hja cjha sj cacs</p>
+            </div>
           </div>
           <div className="index__finest-body--images">
             <p>Image 1</p>
@@ -66,27 +70,28 @@ const IndexPage = () => (
         <div className="index__best-header">
           <h2>Best in the Business</h2>
         </div>
+
         <div className="index__best-body">
           <div className="index__best-body--image">
             <p>Picture goes here</p>
           </div>
           <div className="index__best-body--info">
             <div className="index__best-body--info-row">
-              <p>Icon #1</p>
+              <p className="index__best-body--p">Icon #1</p>
               <div className="index__best-body--info-row-text">
                 <h3>Perfect Quality</h3>
                 <p>asdasdas d asdasd asd </p>
               </div>
             </div>
             <div className="index__best-body--info-row">
-              <p>Icon #2</p>
+              <p className="index__best-body--p">Icon #2</p>
               <div className="index__best-body--info-row-text">
                 <h3>Best Products Used</h3>
                 <p>asdasdas d asdasd asd </p>
               </div>
             </div>
             <div className="index__best-body--info-row">
-              <p>Icon #3</p>
+              <p className="index__best-body--p">Icon #3</p>
               <div className="index__best-body--info-row-text">
                 <h3>Professionals with a Passion</h3>
                 <p>asdasdas d asdasd asd </p>
@@ -110,7 +115,9 @@ const IndexPage = () => (
 
     <section className="section index__customers">
       <div className="index__customers-container">
-        <h2>What customers are saying</h2>
+        <h2 className="index__customers-header">
+          What customers are saying
+        </h2>
         <div className="index__customers-body">
           <div className="index__customers-body-item">
             <p>Picture here 1</p>
@@ -129,25 +136,27 @@ const IndexPage = () => (
     </section>
 
 
-    <section className="section index__call">
+    <section className="index__call">
       <div className="index__call-container">
-        <div className="index__call-book">
-          <h2>Book with us today</h2>
-          <div className="index__call-info">
-            <div className="index__call-info--item">
-              <h3>Call us</h3>
-              <p>555-555-555</p>
-            </div>
-            <div className="index__call-info--item">
-              <h3>Location</h3>
-              <p>123 Alphabet</p>
-              <p>City, State Zip</p>
-            </div>
-            <div className="index__call-info--item">
-              <h3>Hours</h3>
-              <p>Monday-Friday: 8am-5pm</p>
-              <p>Saturday: 8am-7pm</p>
-              <p>Sunday: 9am-2pm</p>
+        <div className="index__call-card">
+          <div className="index__call-book">
+            <h2>Book with us today</h2>
+            <div className="index__call-info">
+              <div className="index__call-info--item">
+                <h3>Call us</h3>
+                <p>555-555-555</p>
+              </div>
+              <div className="index__call-info--item">
+                <h3>Location</h3>
+                <p>123 Alphabet</p>
+                <p>City, State Zip</p>
+              </div>
+              <div className="index__call-info--item">
+                <h3>Hours</h3>
+                <p>Monday-Friday: 8am-5pm</p>
+                <p>Saturday: 8am-7pm</p>
+                <p>Sunday: 9am-2pm</p>
+              </div>
             </div>
           </div>
         </div>

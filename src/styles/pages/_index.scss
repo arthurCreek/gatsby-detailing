@@ -37,21 +37,34 @@
 .index__finest-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
     height: 100%;
     background: $off-white;
     font-size: 2.5em;
 }
 
+.index__finest-header {
+    margin: $m-size auto 0 auto;
+}
+
 .index__finest-body {
     display: flex;
     flex-direction: row;
+    justify-content: space-around; 
+}
+
+.index__finest-body--text {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0 auto 0;
+
+    &-item {
+        margin: auto 0 $xl-size 0;
+    }
 }
 
 .index__finest-footer {
-
-    // need to align to the left
+    margin: 0 auto 0 auto;
 }
 
 
@@ -65,15 +78,23 @@
 .index__popular-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
     height: 100%;
     font-size: 2.5em;
+}
+
+.index__popular-header {
+    margin: $m-size auto 0 auto;
 }
 
 .index__popular-body {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly; 
+}
+
+.index__popular-footer {
+    margin: 0 auto 0 auto;
 }
 
 
@@ -85,28 +106,31 @@
 .index__best-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    justify-content: space-evenly;
     background: $off-white;
     font-size: 2.5em;
+    height: 100%;
 }
 
 .index__best-header {
-    margin-bottom: 20rem;
-    margin-top: -20rem;
+    margin: $m-size auto 0 auto;
 }
 
 .index__best-body {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .index__best-body--info-row {
     display: flex;
     flex-direction: row;
-    margin-left: 3rem;
-    margin-bottom: 2rem;
+    justify-content: left;
+    margin-bottom: $l-size;
+}
+
+.index__best-body--p {
+    margin-right: $xl-size;
 }
 
 /*********************
@@ -117,7 +141,7 @@
 .index__portfolio-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 100%;
     font-size: 2.5em;
@@ -133,16 +157,20 @@
 .index__customers-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
     height: 100%;
     background: $off-white;
     font-size: 2.5em;
 }
 
+.index__customers-header{
+    margin: $m-size auto 0 auto;
+}
+
 .index__customers-body {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 
@@ -154,10 +182,27 @@
 .index__call-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    justify-content: space-between;
+    align-items: left;
     font-size: 2.5em;
+
+    background-image: linear-gradient(105deg, 
+    rgba($color-white, .9) 0%,
+    rgba($color-white, .9) 50%,
+    transparent 50%) ,
+    url(.././images/gtr.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+    max-width: 114rem;
+    margin: 10% auto;
+    height: 50rem;
+}
+
+.index__call-book{
+    width: 50%;
+    padding: 6rem;
 }
 
 .index__call-info {
