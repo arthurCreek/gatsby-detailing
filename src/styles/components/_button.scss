@@ -9,7 +9,7 @@
         border-radius: 10rem;
         transition: all .2s;
         position: relative;
-        font-size: $font-size-small;
+        font-size: $font-size-large;
 
         //Change for the <button> element
         border: none;
@@ -93,4 +93,78 @@
         box-shadow: 0 .5rem 1rem rgba($color-black, .15);
         transform: translateY(0);
     }
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.25s, border 0.2s, color 0.2s;
+    transition: background-color 0.25s, border 0.2s, color 0.2s;
+    border: 1px solid $color-orange;
+    color: $color-orange;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    background-color: #cf6d17;
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+
+
+.btn-ghost--portfolio:link,
+.btn-ghost--portfolio:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.25s, border 0.2s, color 0.2s;
+    transition: background-color 0.25s, border 0.2s, color 0.2s;
+    border: 1px solid $color-white;
+    background-color: $color-white;
+    color: $color-dark-blue;
+    max-width: 240px;
+    margin: 0 auto 0 auto;
+}
+
+.btn-ghost--portfolio:hover,
+.btn-ghost--portfolio:active {
+    // background-color: $color-dark-blue;
+    // border: 1px solid $color-dark-blue;
+    // color: #fff;
+    background-color: #cf6d17;
+    border: 1px solid #cf6d17;
+    color: $color-white;
+}
+
+.btn-ghost--popular:link,
+.btn-ghost--popular:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.25s, border 0.2s, color 0.2s;
+    transition: background-color 0.25s, border 0.2s, color 0.2s;
+    border: 1px solid $color-white;
+    background-color: $color-white;
+    color: $color-dark-blue;
+    max-width: 300px;
+    margin: 0 auto 0 auto;
+}
+
+.btn-ghost--popular:hover,
+.btn-ghost--popular:active {
+    // background-color: $color-dark-blue;
+    // border: 1px solid $color-dark-blue;
+    // color: #fff;
+    background-color: #cf6d17;
+    border: 1px solid #cf6d17;
+    color: $color-white;
 }

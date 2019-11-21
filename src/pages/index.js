@@ -1,16 +1,9 @@
 import React from "react";
 import Layout from "../components/layout";
-import Image from "../components/image";
 import SEO from "../components/seo";
-import wash_1 from '../images/wash_1.jpg';
-import wash_2 from '../images/wash_2.jpg';
-import wash_3 from '../images/wash_3.jpg';
-import zanetti from '../images/zanetti.jpg';
-import customer_1 from '../images/customer-1.jpg';
-import customer_2 from '../images/customer-2.jpg';
-import customer_3 from '../images/customer-3.jpg';
+import Img from 'gatsby-image'
 
-const IndexPage = () => (
+const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" />
     <div className="hero">
@@ -42,19 +35,19 @@ const IndexPage = () => (
             </div>
           </div>
           <div className="index__finest-body--images">
-              <img  alt="Photo 1"
-                    class="index__finest-body--images-photo index__finest-body--images-photo-p1"
-                    src={wash_1} />
-              <img  alt="Photo 2"
-                    class="index__finest-body--images-photo index__finest-body--images-photo-p2"
-                    src={wash_2} />
-              <img  alt="Photo 3"
-                    class="index__finest-body--images-photo index__finest-body--images-photo-p3"
-                    src={wash_3} />
+              <Img  alt="Photo 1"
+                    className="index__finest-body--images-photo index__finest-body--images-photo-p1"
+                    fluid={props.data.wash_1.childImageSharp.fluid} />
+              <Img  alt="Photo 2"
+                    className="index__finest-body--images-photo index__finest-body--images-photo-p2"
+                    fluid={props.data.wash_2.childImageSharp.fluid} />
+              <Img  alt="Photo 3"
+                    className="index__finest-body--images-photo index__finest-body--images-photo-p3"
+                    fluid={props.data.wash_3.childImageSharp.fluid} />
           </div>
         </div>
         <div className="index__finest-footer">
-          <a href="#">Learn More About Us</a>
+          <a className="btn-ghost" href="#">Learn More About Us</a>
         </div>
       </div>
     </section>
@@ -96,7 +89,7 @@ const IndexPage = () => (
           </div>
         </div>
         <div className="index__popular-footer">
-          <p>Button to: Discover All Services</p>
+          <a className="btn-ghost--popular" href="#">Discover Our Services</a>
         </div>
       </div>
     </section>
@@ -110,9 +103,9 @@ const IndexPage = () => (
 
         <div className="index__best-body">
           <div className="index__best-body--image">
-            <img  alt="Photo 1"
-                  class="index__best-body--image-photo"
-                  src={zanetti} />
+            <Img  alt="Photo 1"
+                  className="index__best-body--image-photo"
+                  fluid={props.data.zanetti.childImageSharp.fluid} />
           </div>
           <div className="index__best-body--info">
             <div className="index__best-body--info-row">
@@ -142,15 +135,6 @@ const IndexPage = () => (
     </section>
 
 
-    <section className="section index__portfolio">
-      <div className="index__portfolio-container">
-        <h2>Portfolio</h2>
-        <div className="index__portfolio-gallery">
-          <p>Image gallery here</p>
-        </div>
-        <a href="#">See More</a>
-      </div>
-    </section>
 
     <section className="section index__customers">
       <div className="index__customers-container">
@@ -158,30 +142,31 @@ const IndexPage = () => (
           What customers are saying
         </h2>
         <div className="index__customers-body">
-          <div className="index__customers-body-item">
+          <div className="index__customers-body-item feature-box">
             <blockquote>
               Based on the reviews from others, I really wanted to take my vehicle to Gatsby.  From first call to the finished result was flawless,
               they got my car in tip top shape in no time. They were very helpful in explaining the different 
               options and flexible in dealing with my schedule.
-              <cite><img src={customer_1} alt="Customer 1 photo" />Michael lewis</cite>
+              <cite><Img fluid={props.data.customer_1.childImageSharp.fluid} alt="Customer 1 photo"  className="index__customer-body--photo"/>Michael lewis</cite>
             </blockquote>
           </div>
-          <div className="index__customers-body-item">
+          <div className="index__customers-body-item feature-box">
             <blockquote>
               Arthur and his team at Gatsby are the best of the best. I wish I would've took before and after pictures so I could've post how 
               amazing their work is. Arthur and his team never disappoint.
-              <cite><img src={customer_2} alt="Customer 2 photo" />Sarah Duncan</cite>
+              <cite><Img fluid={props.data.customer_2.childImageSharp.fluid} alt="Customer 2 photo"  className="index__customer-body--photo"/>Sarah Duncan</cite>
             </blockquote>
           </div>
-          <div className="index__customers-body-item">
+          <div className="index__customers-body-item feature-box">
             <blockquote>
               I had the privilege of working with Arthur in trying to remove a lingering odor in my vehicle. He was very quick to respond and 
               fit me into his schedule. He was very professional and was able to successfully remove the odor from the car without issue.  
               I wouldn't hesitate to reach out and work with the Gatsby team again.
-              <cite><img src={customer_1} alt="Customer 3 photo" />Juan Gomez</cite>
+              <cite><Img fluid={props.data.customer_3.childImageSharp.fluid} alt="Customer 3 photo" className="index__customer-body--photo"/>Juan Gomez</cite>
             </blockquote>
           </div>
         </div>
+        <a className="btn-ghost--portfolio" href="#">See Our Portfolio</a>
       </div>
     </section>
 
@@ -224,3 +209,39 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const fluidImage = graphql`
+fragment fluidImage on File {
+  childImageSharp {
+    fluid(maxWidth: 1000) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`;
+
+export const pageQuery = graphql`
+  query {
+    wash_1: file(relativePath: { eq: "wash_1.jpg" }) {
+      ...fluidImage
+    }
+    wash_2: file(relativePath: { eq: "wash_2.jpg" }) {
+      ...fluidImage
+    }
+    wash_3: file(relativePath: { eq: "wash_3.jpg" }) {
+      ...fluidImage
+    }
+    zanetti: file(relativePath: { eq: "zanetti.jpg" }) {
+      ...fluidImage
+    }
+    customer_1: file(relativePath: { eq: "customer-1.jpg" }) {
+      ...fluidImage
+    }
+    customer_2: file(relativePath: { eq: "customer-2.jpg" }) {
+      ...fluidImage
+    }
+    customer_3: file(relativePath: { eq: "customer-3.jpg" }) {
+      ...fluidImage
+    }
+  }
+`

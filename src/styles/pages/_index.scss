@@ -52,8 +52,8 @@
         // }
 
         &-p1 {
-            right: 50rem;
-            top: -5rem;
+            right: 55rem;
+            top: 25rem;
 
             // @include respond(tab-port)  {
             //     top: 0;
@@ -63,7 +63,7 @@
 
         &-p2 {
             right: 40rem;
-            top: 8rem;
+            top: -6rem;
 
             // @include respond(tab-port)  {
             //     top: -1rem;
@@ -74,7 +74,7 @@
 
         &-p3 {
             right: 25rem;
-            bottom: 3rem;
+            top: -10rem;
 
             // @include respond(tab-port)  {
             //     top: 1rem;
@@ -213,12 +213,23 @@
 ** CUSTOMERS SECTION
 
 **********************/
+.index__customers {
+    height: 100vh;
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(.././images/gtr.jpg);
+    background-image: linear-gradient(rgba(251, 86, 3, 0.6), rgba(251, 86, 3, 0.3)),url(.././images/ferrari.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    background-attachment: fixed;
+    color: white;
+}
+
 .index__customers-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
-    background: $off-white;
+    // background: $off-white;
     font-size: 2.5em;
 }
 
@@ -228,9 +239,9 @@
     &::after {
         display: block;
         height: 2px;
-        background-color: $color-orange;
+        background-color: $color-white;
         content: "";
-        width: 100px;
+        width: 300px;
         margin: 0 auto;
         margin-top: 30px;
     }
@@ -240,6 +251,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
 }
 
 .index__customers-body-item {
@@ -270,11 +282,13 @@ cite {
     display: block;
 }
 
-cite img {
-    height: 45px;
+.index__customer-body--photo {
+    height: 75px;
+    width: 75px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 15px;
     vertical-align: middle;
+    display: inline-block;
 }
 
 
@@ -291,10 +305,10 @@ cite img {
     font-size: 2.5em;
 
     background-image: linear-gradient(105deg, 
-        rgba($color-orange, .6) 0%,
-        rgba($color-orange, .6) 50%,
+        rgba($color-orange, .7) 0%,
+        rgba($color-orange, .7) 50%,
         transparent 50%) ,
-    url(.././images/gtr.jpg);
+    url(.././images/gtr-min.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 3px;
