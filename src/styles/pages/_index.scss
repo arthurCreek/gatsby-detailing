@@ -10,10 +10,17 @@
     height: 100%;
     background: $off-white;
     font-size: 2.5em;
+
+
 }
 
 .index__finest-header {
     margin: $m-size auto 0 auto;
+
+    @include respond(phone) {
+        font-size: $font-size-large;
+    }
+
 }
 
 .index__finest-body {
@@ -25,6 +32,9 @@
         flex-direction: column;
         align-items: center;
     }
+    @include respond(phone) {
+        font-size: $font-size-large;
+    }
 }
 
 .index__finest-body--text {
@@ -35,6 +45,10 @@
 
     &-item {
         margin: auto 0 $xl-size 0;
+
+        @include respond(phone) {
+            margin: auto 0 $m-size 0;
+        }
     }
 
     @include respond(tab-land) {
@@ -273,6 +287,8 @@
     flex-direction: row;
     justify-content: left;
     margin-bottom: $l-size;
+    margin-left: 1rem;
+    margin-right: 1rem;
 
 
 }
@@ -329,6 +345,7 @@
 
 .index__customers-header{
     margin: $m-size auto 0 auto;
+    text-align: center;
 
     &::after {
         display: block;
