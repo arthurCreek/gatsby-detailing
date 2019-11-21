@@ -56,7 +56,7 @@ const IndexPage = (props) => (
     </section>
 
 
-    <section className="section index__popular">
+    <section className="section-boxes index__popular">
       <div className="index__popular-container">
         <div className="index__popular-header">
           <h2>Most Popular Services</h2>
@@ -65,12 +65,8 @@ const IndexPage = (props) => (
           <div class="feature-box feature-box--services">
             <h2>Level 2 Detail</h2>
             <h3>Exterior and Interior</h3>
+            <p>In addition to LEVEL 1</p>
             <ul>
-                <li>Exterior wash</li>
-                <li>Dry with 450GSM towels</li>
-                <li>Thorough blow dry</li>
-                <li>Wheels cleaned</li>
-                <li>Tire Dressing with Meguiars</li>
                 <li>Thorough Interior Vacuum</li>
                 <li>Thorough Wipe Down</li>
             </ul>
@@ -79,14 +75,8 @@ const IndexPage = (props) => (
           <div class="feature-box feature-box--services feature-box--services-best">
             <h2>Level 3 Detail</h2>
             <h3>Detail with Added Protection</h3>
+            <p>In addition to LEVEL 2</p>
             <ul id="feature-box__best-box">
-                <li>Exterior wash</li>
-                <li>Dry with 450GSM towels</li>
-                <li>Thorough blow dry</li>
-                <li>Wheels cleaned</li>
-                <li>Tire Dressing with Meguiars</li>
-                <li>Thorough Interior Vacuum</li>
-                <li>Thorough Wipe Down</li>
                 <li>Ceramic Spray Sealant</li>
             </ul>
             <p>Price: $160-200</p>
@@ -95,15 +85,8 @@ const IndexPage = (props) => (
           <div class="feature-box feature-box--services">
             <h2>Level 4 Detail</h2>
             <h3>Light Clay Bar</h3>
+            <p>In addition to LEVEL 3</p>
             <ul>
-                <li>Exterior wash</li>
-                <li>Dry with 450GSM towels</li>
-                <li>Thorough blow dry</li>
-                <li>Wheels cleaned</li>
-                <li>Tire Dressing with Meguiars</li>
-                <li>Thorough Interior Vacuum</li>
-                <li>Thorough Wipe Down</li>
-                <li>Ceramic Spray Sealant</li>
                 <li>Clay Bar treatment</li>
             </ul>
             <p>Price: $240-280</p>
