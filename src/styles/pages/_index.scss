@@ -239,6 +239,12 @@
     background: $off-white;
     font-size: 2.5em;
     height: 100%;
+
+    @include respond(tab-port){
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
 }
 
 .index__best-header {
@@ -249,6 +255,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
+    @include respond(tab-port){
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .index__best-body--info-row {
@@ -261,11 +272,24 @@
 .index__best-body--icon {
     margin-right: $xl-size;
     width: 6rem;
+
+    @include respond(tab-land){
+        margin-right: $s-size;
+    }
 }
 
 .index__best-body--image-photo {
     width: 60rem;
     border-radius: 20px;
+
+    @include respond(tab-land){
+        width: 45rem;
+    }
+
+    @include respond(tab-port){
+        margin-top: -20rem;
+        margin-bottom: 5rem;
+    }
 }
 
 /*********************
