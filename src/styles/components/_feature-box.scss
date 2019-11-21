@@ -11,13 +11,20 @@
     height: 40rem;
     color: $color-dark-blue;
 
-    &--popular {
+    &--services {
         height: 50rem;
 
         &-best {
             background-color: rgba($color-dark-blue, .9);
             color: $color-white;
         }
+    }
+
+    &--service-page {
+        background-color: rgba($color-orange, .8);
+        color: $off-white;
+        height: 60rem;
+        width: 40rem;
     }
 
 
@@ -44,14 +51,14 @@
 
     ul {
         list-style: none;
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
 
         li {
             text-align: center;
             font-size: 1.5rem;
             padding: 1rem;
-            border-bottom: 1px solid $color-dark-blue;
+            border-bottom: 1px solid $gray;
         }
     }
 

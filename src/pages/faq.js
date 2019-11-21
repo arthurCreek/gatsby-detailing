@@ -35,7 +35,7 @@ const FAQ = () =>  (
                 </div>
 
                 <div className="faq__item">
-                    <h2>What are the most common causes of swirl marks in dark colored cars</h2>
+                    <h2>What are the most common causes of swirl marks in dark colored cars?</h2>
                     <p>Swirl marks are small micro scratches in the paints surface that become more visible in the direct sunlight. The most common causes are caused by:</p>
                     <ul>
                         <li>Washing the vehicle from the bottom up, thus dragging the dirt from the wheel well onto the middle panels of the vehicles which causes small scratches.</li>

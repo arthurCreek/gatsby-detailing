@@ -1,7 +1,10 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Img from 'gatsby-image'
+import Img from 'gatsby-image';
+import best_icon_1 from '../images/medal.svg';
+import best_icon_2 from '../images/disinfectant.svg';
+import best_icon_3 from '../images/clean-car.svg';
 
 const IndexPage = (props) => (
   <Layout>
@@ -59,7 +62,7 @@ const IndexPage = (props) => (
           <h2>Most Popular Services</h2>
         </div>  
         <div className="index__popular-body">
-          <div class="feature-box feature-box--popular">
+          <div class="feature-box feature-box--services">
             <h2>Level 2 Detail</h2>
             <h3>Exterior and Interior</h3>
             <ul>
@@ -73,7 +76,7 @@ const IndexPage = (props) => (
             </ul>
             <p>Price: $120-140</p>
           </div>
-          <div class="feature-box feature-box--popular feature-box--popular-best">
+          <div class="feature-box feature-box--services feature-box--services-best">
             <h2>Level 3 Detail</h2>
             <h3>Detail with Added Protection</h3>
             <ul id="feature-box__best-box">
@@ -89,7 +92,7 @@ const IndexPage = (props) => (
             <p>Price: $160-200</p>
             <p id="popular-p">MOST POPULAR</p>
           </div>
-          <div class="feature-box feature-box--popular">
+          <div class="feature-box feature-box--services">
             <h2>Level 4 Detail</h2>
             <h3>Light Clay Bar</h3>
             <ul>
@@ -127,21 +130,21 @@ const IndexPage = (props) => (
           </div>
           <div className="index__best-body--info">
             <div className="index__best-body--info-row">
-              <p className="index__best-body--p">Icon #1</p>
+              <img src={best_icon_1} alt="medal icon" className="index__best-body--icon"/>
               <div className="index__best-body--info-row-text">
                 <h3>Perfect Quality</h3>
                 <p>Quality you expect from the best</p>
               </div>
             </div>
             <div className="index__best-body--info-row">
-              <p className="index__best-body--p">Icon #2</p>
+              <img src={best_icon_2} alt="disinfectant icon" className="index__best-body--icon"/>
               <div className="index__best-body--info-row-text">
                 <h3>Best Products Used</h3>
                 <p>All products are top notch for best results</p>
               </div>
             </div>
             <div className="index__best-body--info-row">
-              <p className="index__best-body--p">Icon #3</p>
+              <img src={best_icon_3} alt="disinfectant icon" className="index__best-body--icon"/>
               <div className="index__best-body--info-row-text">
                 <h3>Professionals with a Passion</h3>
                 <p>We take care of your car like it's our own</p>

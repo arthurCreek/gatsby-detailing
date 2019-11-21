@@ -11,12 +11,12 @@ const Services = () =>  (
             </div>
         </div>
 
-        <section className="section services__section">
+        <section className="services__section">
             <div className="services__container">
                 <h1>Quality Services</h1>
                 <p>Find our services below, contact us for a free consultation!</p>
                 <div className="services__grid">
-                    <div className="services__grid-item">
+                    <div className="services__grid-item feature-box feature-box--service-page">
                         <h2>Level 1 Detail</h2>
                         <h3>Thorough Exterior Wash</h3>
                         <ul>
@@ -28,49 +28,85 @@ const Services = () =>  (
                         </ul>
                         <p>Price: $60-80</p>
                     </div>
-                    <div className="services__grid-item">
+                    <div className="services__grid-item feature-box feature-box--service-page">
                         <h2>Level 2 Detail</h2>
                         <h3>Exterior and Interior</h3>
-                        <p>In addition to Level 1</p>
                         <ul>
+                            <li>Exterior wash</li>
+                            <li>Dry with 450GSM towels</li>
+                            <li>Thorough blow dry</li>
+                            <li>Wheels cleaned</li>
+                            <li>Tire Dressing with Meguiars</li>
                             <li>Thorough Interior Vacuum</li>
                             <li>Thorough Wipe Down</li>
                         </ul>
                         <p>Price: $120-140</p>
                     </div>
-                    <div className="services__grid-item">
+                    <div className="services__grid-item feature-box feature-box--service-page">
                         <h2>Level 3 Detail</h2>
                         <h3>Detail with Added Protection</h3>
-                        <p>In addition to Level 2</p>
                         <ul>
+                            <li>Exterior wash</li>
+                            <li>Dry with 450GSM towels</li>
+                            <li>Thorough blow dry</li>
+                            <li>Wheels cleaned</li>
+                            <li>Tire Dressing with Meguiars</li>
+                            <li>Thorough Interior Vacuum</li>
+                            <li>Thorough Wipe Down</li>
                             <li>Ceramic Spray Sealant</li>
                         </ul>
                         <p>Price: $160-200</p>
+                        <p id="services-p">MOST POPULAR</p>
                     </div>
-                    <div className="services__grid-item">
+                    <div className="services__grid-item feature-box feature-box--service-page">
                         <h2>Level 4 Detail</h2>
                         <h3>Light Clay Bar</h3>
-                        <p>In addition to Level 3</p>
                         <ul>
+                            <li>Exterior wash</li>
+                            <li>Dry with 450GSM towels</li>
+                            <li>Thorough blow dry</li>
+                            <li>Wheels cleaned</li>
+                            <li>Tire Dressing with Meguiars</li>
+                            <li>Thorough Interior Vacuum</li>
+                            <li>Thorough Wipe Down</li>
+                            <li>Ceramic Spray Sealant</li>
                             <li>Clay Bar treatment</li>
                         </ul>
                         <p>Price: $240-280</p>
                     </div>
-                    <div className="services__grid-item">
+                    <div className="services__grid-item feature-box feature-box--service-page">
                         <h2>Level 5 Detail</h2>
                         <h3>Decontamination with shine and wheel protection</h3>
-                        <p>In addition to Level 4</p>
                         <ul>
+                            <li>Exterior wash</li>
+                            <li>Dry with 450GSM towels</li>
+                            <li>Thorough blow dry</li>
+                            <li>Wheels cleaned</li>
+                            <li>Tire Dressing with Meguiars</li>
+                            <li>Thorough Interior Vacuum</li>
+                            <li>Thorough Wipe Down</li>
+                            <li>Ceramic Spray Sealant</li>
+                            <li>Clay Bar treatment</li>
                             <li>Heavier gunk removal treatment</li>
                             <li>Wheels coated with ceramic spray sealant</li>
                         </ul>
                         <p>Price: $340-400</p>
                     </div>
-                    <div className="services__grid-item">
+                    <div className="services__grid-item feature-box feature-box--service-page">
                         <h2>Level 6 Detail</h2>
                         <h3>Extra shine</h3>
-                        <p>In addition to Level 5</p>
                         <ul>
+                            <li>Exterior wash</li>
+                            <li>Dry with 450GSM towels</li>
+                            <li>Thorough blow dry</li>
+                            <li>Wheels cleaned</li>
+                            <li>Tire Dressing with Meguiars</li>
+                            <li>Thorough Interior Vacuum</li>
+                            <li>Thorough Wipe Down</li>
+                            <li>Ceramic Spray Sealant</li>
+                            <li>Clay Bar treatment</li>
+                            <li>Heavier gunk removal treatment</li>
+                            <li>Wheels coated with ceramic spray sealant</li>
                             <li>Extra layer of sealant</li>
                         </ul>
                         <p>Price: $500-540</p>

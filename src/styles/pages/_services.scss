@@ -10,7 +10,7 @@
     align-items: center;
     height: 100%;
     width: 80rem;
-    margin: 0 auto 0 auto;
+    margin: $xl-size auto 0 auto;
     font-size: 2em;
 }
 
@@ -22,4 +22,9 @@
 
 .services__grid-item {
     margin: 5rem;
+}
+
+#services-p {
+    color: $off-white;
+    font-size: 2em;
 }
