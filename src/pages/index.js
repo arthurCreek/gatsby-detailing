@@ -1,11 +1,14 @@
-import React from "react"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-import wash_1 from '../images/wash_1.jpg'
-import wash_2 from '../images/wash_2.jpg'
-import wash_3 from '../images/wash_3.jpg'
+import React from "react";
+import Layout from "../components/layout";
+import Image from "../components/image";
+import SEO from "../components/seo";
+import wash_1 from '../images/wash_1.jpg';
+import wash_2 from '../images/wash_2.jpg';
+import wash_3 from '../images/wash_3.jpg';
+import zanetti from '../images/zanetti.jpg';
+import customer_1 from '../images/customer-1.jpg';
+import customer_2 from '../images/customer-2.jpg';
+import customer_3 from '../images/customer-3.jpg';
 
 const IndexPage = () => (
   <Layout>
@@ -107,7 +110,9 @@ const IndexPage = () => (
 
         <div className="index__best-body">
           <div className="index__best-body--image">
-            <p>Picture goes here</p>
+            <img  alt="Photo 1"
+                  class="index__best-body--image-photo"
+                  src={zanetti} />
           </div>
           <div className="index__best-body--info">
             <div className="index__best-body--info-row">
@@ -154,21 +159,27 @@ const IndexPage = () => (
         </h2>
         <div className="index__customers-body">
           <div className="index__customers-body-item">
-            <p>Picture here 1</p>
-            <p>Based on the reviews from others, I really wanted to take my vehicle to Gatsby.  From first call to the finished result was flawless,
-            they got my car in tip top shape in no time. They were very helpful in explaining the different 
-            options and flexible in dealing with my schedule.</p>
+            <blockquote>
+              Based on the reviews from others, I really wanted to take my vehicle to Gatsby.  From first call to the finished result was flawless,
+              they got my car in tip top shape in no time. They were very helpful in explaining the different 
+              options and flexible in dealing with my schedule.
+              <cite><img src={customer_1} alt="Customer 1 photo" />Michael lewis</cite>
+            </blockquote>
           </div>
           <div className="index__customers-body-item">
-            <p>Picture here 2</p>
-            <p>Arthur and his team at Gatsby are the best of the best. I wish I would've took before and after pictures so I could've post how 
-            amazing their work is. Arthur and his team never disappoint.</p>
+            <blockquote>
+              Arthur and his team at Gatsby are the best of the best. I wish I would've took before and after pictures so I could've post how 
+              amazing their work is. Arthur and his team never disappoint.
+              <cite><img src={customer_2} alt="Customer 2 photo" />Sarah Duncan</cite>
+            </blockquote>
           </div>
           <div className="index__customers-body-item">
-            <p>Picture here 3</p>
-            <p>I had the privilege of working with Arthur in trying to remove a lingering odor in my vehicle. He was very quick to respond and 
-            fit me into his schedule. He was very professional and was able to successfully remove the odor from the car without issue.  
-            I wouldn't hesitate to reach out and work with the Gatsby team again.</p>
+            <blockquote>
+              I had the privilege of working with Arthur in trying to remove a lingering odor in my vehicle. He was very quick to respond and 
+              fit me into his schedule. He was very professional and was able to successfully remove the odor from the car without issue.  
+              I wouldn't hesitate to reach out and work with the Gatsby team again.
+              <cite><img src={customer_1} alt="Customer 3 photo" />Juan Gomez</cite>
+            </blockquote>
           </div>
         </div>
       </div>
