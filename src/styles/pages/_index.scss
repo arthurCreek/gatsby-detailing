@@ -262,11 +262,19 @@
     }
 }
 
+.index__best-body--info {
+    @include respond(phone){
+        margin: 0 auto $l-size auto;
+    }
+}
+
 .index__best-body--info-row {
     display: flex;
     flex-direction: row;
     justify-content: left;
     margin-bottom: $l-size;
+
+
 }
 
 .index__best-body--icon {
@@ -289,6 +297,9 @@
     @include respond(tab-port){
         margin-top: -20rem;
         margin-bottom: 5rem;
+    }
+    @include respond(tab-port){
+        margin-top: 0rem;
     }
 }
 
