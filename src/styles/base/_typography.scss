@@ -7,13 +7,24 @@
 
     &--main {
         display: block;
-        font-size: 6rem;
+        font-size: 8rem;
         font-weight: 400;
         letter-spacing: 3.5rem;
     
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
+
+        @include respond(phone) {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-left: 2rem;
+            letter-spacing: 1.5rem;
+        }
+
+        @include respond(big-desktop) {
+            font-size: 6rem;
+        }
     
         /*
         animation-delay: 3s;
@@ -23,9 +34,21 @@
     
     &--sub {
         display: block;
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 700;
         letter-spacing: 1.75rem;
         animation: moveInRight 1s ease-out;
+
+        @include respond(phone) {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-left: 2rem;
+            letter-spacing: 0rem;
+        }
+
+        @include respond(big-desktop) {
+            font-size: 2rem;
+        }
+    
     }
 }
