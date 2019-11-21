@@ -311,11 +311,10 @@
     }
 
     @include respond(tab-port){
-        margin-top: -20rem;
-        margin-bottom: 5rem;
-    }
-    @include respond(tab-port){
         margin-top: 0rem;
+    }
+    @include respond(phone){
+        width: 35rem;
     }
 }
 
@@ -456,24 +455,78 @@ cite {
     margin: 10% auto;
     height: 50rem;
     color: white;
+
+    @include respond(tab-land) {
+        background-image: linear-gradient(105deg, 
+        rgba($color-orange, .7) 0%,
+        rgba($color-orange, .7) 65%,
+        transparent 65%) ,
+        url(.././images/gtr-min.jpg);
+        background-size: cover;
+    }
+
+    @include respond(tab-port) {
+        background-image: linear-gradient(to right, 
+        rgba($color-orange, .7) 0%,
+        rgba($color-orange, .7) 100%),
+        url(.././images/gtr-min.jpg);
+
+        width: 60rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    @include respond(tab-port) {
+        width: 80vw;
+        height: 60rem;
+    }
+
 }
 
 .index__call-book{
     width: 50%;
     padding: 6rem;
+
+    @include respond(tab-land) {
+        width: 65%;
+    }
+
+    @include respond(tab-port) {
+        width: 100%;
+    }
+
+    @include respond(phone) {
+        width: 100%;
+    }
 }
 
 .index__call-info--call-location {
     display: flex;
     flex-direction: row;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+
+    @include respond(phone) {
+        width: 100%;
+    }
 }
 
 .index__call-info--item {
     margin-right: $xl-size;
     margin-top: $m-size;
+
+    @include respond(phone) {
+        margin-right: 0;
+    }
 }
 
 .index__call-info {
     display: flex;
     flex-direction: column;
+
+    @include respond(phone) {
+        width: 80vw;
+    }
 }
