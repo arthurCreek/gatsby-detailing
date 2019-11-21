@@ -21,7 +21,7 @@ const IndexPage = (props) => (
     </div>
 
 
-    <section className="section index__finest">
+    <section className="section-boxes index__finest">
       <div className="index__finest-container">
         <div className="index__finest-header">
           <h2>The Finest Quality from Gatsby</h2>

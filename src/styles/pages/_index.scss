@@ -38,8 +38,12 @@
     }
 
     @include respond(tab-land) {
-        width: 60vw;
+        width: 70vw;
         margin: $l-size 0 $l-size 0;
+    }
+
+    @include respond(phone) {
+        width: 80vw;
     }
 }
 
@@ -55,6 +59,15 @@
         transition: all .2s;
         outline-offset: 2rem;
 
+
+        @include respond(tab-port) {
+            width: 23rem;
+        }
+
+        @include respond(phone) {
+            width: 70vw;
+        }
+
         @include respond(big-desktop) {
             width: 30rem;
             box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
@@ -67,7 +80,15 @@
             @include respond(tab-land) {
                 right: 0;
                 top: 0;
-                margin: 0 2rem 0 2rem;
+                margin: 0 1rem 0 1rem;
+            }
+
+            @include respond(tab-port) {
+                margin: 0 0 0 0;
+            }
+
+            @include respond(phone) {
+                margin: $m-size 0 $m-size 0;
             }
 
             @include respond(big-desktop)  {
@@ -84,7 +105,15 @@
             @include respond(tab-land) {
                 right: 0;
                 top: 0;
-                margin: 0 2rem 0 2rem;
+                margin: 0 1rem 0 1rem;
+            }
+
+            @include respond(tab-port) {
+                margin: 0 0 0 0;
+            }
+
+            @include respond(phone) {
+                margin: $m-size 0 $m-size 0;
             }
 
             @include respond(big-desktop)  {
@@ -101,7 +130,15 @@
             @include respond(tab-land) {
                 right: 0;
                 top: 0;
-                margin: 0 2rem 0 2rem;
+                margin: 0 1rem 0 1rem;
+            }
+
+            @include respond(tab-port) {
+                margin: 0 0 0 0;
+            }
+
+            @include respond(phone) {
+                margin: $m-size 0 $m-size 0;
             }
 
             @include respond(big-desktop)  {
@@ -124,14 +161,24 @@
         transform: scale(.95);
     }
 
+
     @include respond(tab-land) {
         display: flex;
         flex-direction: row;
+    }
+
+    @include respond(phone) {
+        display: flex;
+        flex-direction: column;
     }
 }
 
 .index__finest-footer {
     margin: 0 auto 0 auto;
+
+    @include respond(tab-land){
+        margin: $l-size auto $l-size auto;
+    }
 }
 
 
