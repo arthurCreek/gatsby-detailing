@@ -11,6 +11,16 @@
     height: 40rem;
     color: $color-dark-blue;
 
+    &--popular {
+        height: 50rem;
+
+        &-best {
+            background-color: rgba($color-dark-blue, .9);
+            color: $color-white;
+        }
+    }
+
+
     // @include respond(tab-port) {
     //     padding: 2rem;
     // }
@@ -31,4 +41,39 @@
     &:hover {
         transform: translateY(-1.5rem) scale(1.03);
     }
+
+    ul {
+        list-style: none;
+        width: 80%;
+        margin: 0 auto;
+
+        li {
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 1rem;
+            border-bottom: 1px solid $color-dark-blue;
+        }
+    }
+
+    p {
+        margin: $m-size 0;
+    }
+}
+
+#feature-box__best-box {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+    li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+        border-bottom: 1px solid $color-orange;
+    }
+
+}
+
+#popular-p {
+    color: $color-orange;
+    font-size: $font-size-large;
 }

@@ -59,30 +59,48 @@ const IndexPage = (props) => (
           <h2>Most Popular Services</h2>
         </div>  
         <div className="index__popular-body">
-          <div class="feature-box">
+          <div class="feature-box feature-box--popular">
             <h2>Level 2 Detail</h2>
             <h3>Exterior and Interior</h3>
-            <p>In addition to Level 1</p>
             <ul>
+                <li>Exterior wash</li>
+                <li>Dry with 450GSM towels</li>
+                <li>Thorough blow dry</li>
+                <li>Wheels cleaned</li>
+                <li>Tire Dressing with Meguiars</li>
                 <li>Thorough Interior Vacuum</li>
                 <li>Thorough Wipe Down</li>
             </ul>
             <p>Price: $120-140</p>
           </div>
-          <div class="feature-box">
+          <div class="feature-box feature-box--popular feature-box--popular-best">
             <h2>Level 3 Detail</h2>
             <h3>Detail with Added Protection</h3>
-            <p>In addition to Level 2</p>
-            <ul>
+            <ul id="feature-box__best-box">
+                <li>Exterior wash</li>
+                <li>Dry with 450GSM towels</li>
+                <li>Thorough blow dry</li>
+                <li>Wheels cleaned</li>
+                <li>Tire Dressing with Meguiars</li>
+                <li>Thorough Interior Vacuum</li>
+                <li>Thorough Wipe Down</li>
                 <li>Ceramic Spray Sealant</li>
             </ul>
             <p>Price: $160-200</p>
+            <p id="popular-p">MOST POPULAR</p>
           </div>
-          <div class="feature-box">
+          <div class="feature-box feature-box--popular">
             <h2>Level 4 Detail</h2>
             <h3>Light Clay Bar</h3>
-            <p>In addition to Level 3</p>
             <ul>
+                <li>Exterior wash</li>
+                <li>Dry with 450GSM towels</li>
+                <li>Thorough blow dry</li>
+                <li>Wheels cleaned</li>
+                <li>Tire Dressing with Meguiars</li>
+                <li>Thorough Interior Vacuum</li>
+                <li>Thorough Wipe Down</li>
+                <li>Ceramic Spray Sealant</li>
                 <li>Clay Bar treatment</li>
             </ul>
             <p>Price: $240-280</p>
