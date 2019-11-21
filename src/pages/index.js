@@ -140,7 +140,7 @@ const IndexPage = (props) => (
 
 
 
-    <section className="section index__customers">
+    <section className="section-boxes index__customers">
       <div className="index__customers-container">
         <h2 className="index__customers-header">
           What customers are saying
@@ -170,7 +170,9 @@ const IndexPage = (props) => (
             </blockquote>
           </div>
         </div>
-        <a className="btn-ghost--portfolio" href="#">See Our Portfolio</a>
+        <div className="index__portfolio-footer">
+          <a className="btn-ghost--portfolio" href="#">See Our Portfolio</a>
+        </div>
       </div>
     </section>
 
