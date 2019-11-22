@@ -220,8 +220,7 @@
     @include respond(phone){
         width: 6rem;
         height: 6rem;
-        margin-top: -6.3rem;
-        margin-bottom: 1.3rem;
+        margin-top: -6rem;
         margin-right: 2.5rem;
     }
 }
@@ -246,7 +245,6 @@
     @include respond(phone) {
         height: 6rem;
         width: 6rem;
-        margin: auto 0 auto 2rem;
     }
 }
 
