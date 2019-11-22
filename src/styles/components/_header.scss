@@ -25,9 +25,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     height: $header-height;
 
     @include respond(tab-port) {
@@ -43,9 +40,10 @@
 
 .header__nav {
     height: $header-height;
+    margin-left: -10.8rem;
 
     @include respond(tab-port) {
-        height: 50rem;
+        height: 32rem;
         display: none;
     }
 }
@@ -128,6 +126,34 @@
 }
 
 .header__contact {
+    @include respond(tab-port) {
+        // -webkit-box-orient: vertical;
+        // -webkit-box-direction: normal;
+        //     -ms-flex-direction: column;
+        //         flex-direction: column;
+        // -webkit-box-pack: center;
+        //     -ms-flex-pack: center;
+        //         justify-content: center;
+        // margin-top: 14rem;
+        // width: 100vw;
+        // height: 6rem;
+        // padding: 2rem;
+        display: none;
+    }
+}
+
+.heaver__nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+}
+
+.header__contact--link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -145,34 +171,27 @@
     color: #090C0E;
     background-color: $color-orange; 
     width: 20rem;
+    height: 100%;
 
     @include respond(tab-port) {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        margin-top: 14rem;
+        // -webkit-box-orient: vertical;
+        // -webkit-box-direction: normal;
+        //     -ms-flex-direction: column;
+        //         flex-direction: column;
+        // -webkit-box-pack: center;
+        //     -ms-flex-pack: center;
+        //         justify-content: center;
+        // margin-top: 14rem;
         width: 100vw;
         height: 6rem;
         padding: 2rem;
-        display: none;
+        // display: none;
     }
 
     :hover {
         color: $off-white;
     }
 }
-
-// .logo {
-//     height: 6rem;
-
-//     @include respond(tab-port){
-//         height: 8rem;
-//     }
-// }
 
 .header__menu-logo {
     width: 7rem;

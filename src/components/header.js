@@ -17,16 +17,20 @@ const Header = (props) => {
             <div className="header__container">
                 <img src={logo} alt="company logo" className="logo" id="header-logo" />
                 <img src={menu_logo} alt="menu icon" className="header__menu-logo" onClick={toggleShow}/>
-                <nav className="header__nav">
-                    <ul className="header__list">
-                        <li><Link className="header__list-item" to="/">Home</Link></li>
-                        <li><Link className="header__list-item" to="/about/">About Us</Link></li>
-                        <li><Link className="header__list-item" to="/services/">Services</Link></li>
-                        <li><Link className="header__list-item" to="/portfolio/">Portfolio</Link></li>
-                        <li><Link className="header__list-item" to="/faq/">FAQ</Link></li>
-                    </ul>
-                </nav>
-                <Link className="header__contact " to="/contact_us/">Contact Us</Link>
+                <div className="heaver__nav-container">
+                    <nav className="header__nav">
+                        <ul className="header__list">
+                            <li><Link className="header__list-item" to="/">Home</Link></li>
+                            <li><Link className="header__list-item" to="/about/">About Us</Link></li>
+                            <li><Link className="header__list-item" to="/services/">Services</Link></li>
+                            <li><Link className="header__list-item" to="/portfolio/">Portfolio</Link></li>
+                            <li><Link className="header__list-item" to="/faq/">FAQ</Link></li>
+                        </ul>
+                    </nav>
+                    <div className="header__contact">
+                        <Link className="header__contact--link" to="/contact_us/">Contact Us</Link>
+                    </div>
+                </div>
             </div>
         </header>
     )
