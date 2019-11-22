@@ -8,20 +8,42 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 80rem;
-    margin: $xl-size auto 0 auto;
+    margin: $xl-size auto $xl-size auto;
     font-size: 2em;
+}
+
+.services__header-text {
+    text-align: center;
+    margin: 0 $m-size 0 $m-size;
 }
 
 .services__grid {
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+
+    @include respond(tab-land){
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    @include respond(phone){
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
 }
 
 .services__grid-item {
-    margin: 5rem;
+    margin: 2rem;
+
+
+    @include respond(tab-port) {
+        margin: 2rem 1rem 2rem 1rem;
+    }
+
+    @include respond(big-desktop){
+        margin: 5rem;
+    }
 }
 
 #services-p {

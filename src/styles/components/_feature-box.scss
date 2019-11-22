@@ -26,17 +26,22 @@
             color: $color-white;
         }
 
-        @include respond(tab-port){
-            margin: $l-size 0 $l-size 0;
-            height: 35rem;
-        }
     }
 
     &--service-page {
         background-color: rgba($color-orange, .8);
         color: $off-white;
-        height: 60rem;
-        width: 40rem;
+        height: 45rem;
+        width: 35rem;
+        margin: 0 3rem 0 3rem;
+
+        @include respond(tab-land) {
+            height: 35rem;
+        }
+
+        @include respond(big-desktop) {
+            margin: 0 6rem 0 6rem;
+        }
     }
 
     &:hover {
