@@ -5,6 +5,12 @@ import menu_logo from '../images/menu-button.png';
 
 const Header = (props) => {
 
+    function toggleShow() {
+        document.querySelector('.header__nav').classList.toggle('Navbar__ToggleShow');
+        document.querySelector('.header__contact').classList.toggle('Navbar__ToggleShow');
+        document.querySelector('.header').classList.toggle('header__open');
+    }
+    
     return (
         
         <header className="header">
