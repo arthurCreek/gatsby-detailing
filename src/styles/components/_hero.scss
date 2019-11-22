@@ -75,3 +75,10 @@
 #hero__contact-text-box {
     top: 70%;
 }
+
+#hero__main-text {
+    
+    @include respond(phone){
+        top: 50%;
+    }
+}

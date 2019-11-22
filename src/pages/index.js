@@ -11,7 +11,7 @@ const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" />
     <div className="hero">
-      <div className="hero__text-box">
+      <div className="hero__text-box" id="hero__main-text">
         <h1 className="hero-primary">
           <span className="hero-primary--main">Gatsby Detailing</span>
           <span className="hero-primary--sub">We love your car as much as you do</span>
