@@ -35,10 +35,10 @@
     
     &--white {
         background-color: $color-white;
-        color: $gray;
+        color: $color-dark-blue;
 
         &::after {
-            background-color: $color-white;
+            background-color: $color-dark-blue;
         }
     }
 
