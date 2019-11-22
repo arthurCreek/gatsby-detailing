@@ -252,6 +252,11 @@
     background-position: top;
     position: relative;
     background-attachment: fixed;
+
+    @include respond(phone){
+        background-size: auto;
+        background-position: inherit;
+    }
 }
 
 .index__popular-container {
@@ -454,6 +459,11 @@
     position: relative;
     background-attachment: fixed;
     color: white;
+
+    @include respond(phone){
+        background-size: auto;
+        background-position: inherit;
+    }
 }
 
 .index__customers-container {

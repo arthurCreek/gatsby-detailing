@@ -52,8 +52,11 @@
         height: 50vh;
     }
 
-    @include respond(tab-port){
-        height: 40vh;
+    // @include respond(tab-port){
+    //     height: 40vh;
+    // }
+    @include respond(phone){
+        background-position: top;
     }
 }
 
