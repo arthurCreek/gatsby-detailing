@@ -17,6 +17,23 @@
     flex-direction: column;
 }
 
+.portfolio__grid {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: $xl-size;
+
+    @include respond(tab-land){
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    @include respond(phone){
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
 .car-showcase {
     list-style: none;
     width: 100%;
