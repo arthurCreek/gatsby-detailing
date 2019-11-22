@@ -15,7 +15,7 @@ const Header = (props) => {
         
         <header className="header">
             <div className="header__container">
-                <li id="header-logo"><img src={logo} alt="company logo" className="logo" /></li>
+                <img src={logo} alt="company logo" className="logo" id="header-logo" />
                 <img src={menu_logo} alt="menu icon" className="header__menu-logo" onClick={toggleShow}/>
                 <nav className="header__nav">
                     <ul className="header__list">
