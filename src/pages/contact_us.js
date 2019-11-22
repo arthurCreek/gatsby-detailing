@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 const ContactUs = () =>  (
     <Layout>
         <div className="hero-sub--contact">
-            <div className="hero-sub__text-box">
+            <div className="hero-sub__text-box" id="hero__contact-text-box">
                     <h1 className="hero-primary">
                     <span className="hero-primary--main">Contact Us</span>
                 </h1>
