@@ -7,7 +7,6 @@ const Header = (props) => {
 
     function toggleShow() {
         document.querySelector('.header__nav').classList.toggle('Navbar__ToggleShow');
-        document.querySelector('.header__contact').classList.toggle('Navbar__ToggleShow');
         document.querySelector('.header').classList.toggle('header__open');
     }
     
@@ -25,11 +24,9 @@ const Header = (props) => {
                             <li><Link className="header__list-item" to="/services/">Services</Link></li>
                             <li><Link className="header__list-item" to="/portfolio/">Portfolio</Link></li>
                             <li><Link className="header__list-item" to="/faq/">FAQ</Link></li>
+                            <li><Link className="header__list-item" to="/contact_us/">Contact Us</Link></li>
                         </ul>
                     </nav>
-                    <div className="header__contact">
-                        <Link className="header__contact--link" to="/contact_us/">Contact Us</Link>
-                    </div>
                 </div>
             </div>
         </header>
