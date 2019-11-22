@@ -15,7 +15,7 @@ const FAQ = () =>  (
             <div className="faq__container">
                 <div className="faq__item">
                     <h1>Frequently Asked Questions</h1>
-                </div>
+                </div> 
 
                 <div className="faq__item">
                     <h2>What is Acid Rain?</h2>
