@@ -62,7 +62,7 @@ const IndexPage = (props) => (
           <h2>Most Popular Services</h2>
         </div>  
         <div className="index__popular-body">
-          <div class="feature-box feature-box--services">
+          <div className="feature-box feature-box--services">
             <h2>Level 2 Detail</h2>
             <h3>Exterior and Interior</h3>
             <p>In addition to LEVEL 1</p>
@@ -72,7 +72,7 @@ const IndexPage = (props) => (
             </ul>
             <p>Price: $120-140</p>
           </div>
-          <div class="feature-box feature-box--services feature-box--services-best">
+          <div className="feature-box feature-box--services feature-box--services-best">
             <h2>Level 3 Detail</h2>
             <h3>Detail with Added Protection</h3>
             <p>In addition to LEVEL 2</p>
@@ -82,7 +82,7 @@ const IndexPage = (props) => (
             <p>Price: $160-200</p>
             <p id="popular-p">MOST POPULAR</p>
           </div>
-          <div class="feature-box feature-box--services">
+          <div className="feature-box feature-box--services">
             <h2>Level 4 Detail</h2>
             <h3>Light Clay Bar</h3>
             <p>In addition to LEVEL 3</p>

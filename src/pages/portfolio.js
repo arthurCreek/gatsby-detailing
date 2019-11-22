@@ -12,31 +12,31 @@ const Portfolio = (props) =>  (
             </div>
         </div>
 
-        <section class="section-cars">
+        <section className="section-cars">
           <div className="portfolio__grid">
-              <figure class="car-photo">
-                  <Img fluid={props.data.aston.childImageSharp.fluid} className="car-image" alt="Korean bibimbap with egg and vegetables" />
+              <figure className="car-photo">
+                  <Img fluid={props.data.aston.childImageSharp.fluid} classNameName="car-image" alt="Korean bibimbap with egg and vegetables" />
               </figure>
-              <figure class="car-photo">
-                  <Img fluid={props.data.bmw.childImageSharp.fluid} className="car-image" alt="Simple italian pizza with cherry tomatoes" />
+              <figure className="car-photo">
+                  <Img fluid={props.data.bmw.childImageSharp.fluid} classNameName="car-image" alt="Simple italian pizza with cherry tomatoes" />
               </figure>
-              <figure class="car-photo">
+              <figure className="car-photo">
                   <Img fluid={props.data.zanetti.childImageSharp.fluid} className="car-image" alt="Chicken breast steak with vegetables" />
               </figure>
 
-              <figure class="car-photo">
+              <figure className="car-photo">
                   <Img fluid={props.data.gtr.childImageSharp.fluid} className="car-image" alt="Autumn pumpkin soup" />
               </figure>
-              <figure class="car-photo">
+              <figure className="car-photo">
                   <Img fluid={props.data.lambo.childImageSharp.fluid} className="car-image" alt="Paleo beef steak with vegetables" />
               </figure>
-              <figure class="car-photo">
+              <figure className="car-photo">
                   <Img fluid={props.data.classic.childImageSharp.fluid} className="car-image" alt="Healthy baguette with egg and vegetables" />
               </figure>
-              <figure class="car-photo">
+              <figure className="car-photo">
                   <Img fluid={props.data.classic_mercedez.childImageSharp.fluid} className="car-image" alt="Burger with cheddar and bacon" />
               </figure>
-              <figure class="car-photo">
+              <figure className="car-photo">
                   <Img fluid={props.data.lowrider.childImageSharp.fluid} className="car-image" alt="Granola with cherries and strawberries" />
               </figure>
           </div>
