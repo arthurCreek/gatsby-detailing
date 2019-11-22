@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
 import SEO from "../components/seo";
 import Img from 'gatsby-image';
 import best_icon_1 from '../images/medal.svg';
