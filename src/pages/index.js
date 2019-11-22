@@ -100,7 +100,7 @@ const IndexPage = (props) => (
     </section>
 
 
-    <section className="section-box index__best">
+    <section className="section-boxes index__best">
       <div className="index__best-container">
         <div className="index__best-header">
           <h2>Best in the Business</h2>

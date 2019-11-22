@@ -11,9 +11,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    // -webkit-box-pack: space-evenly;
+    //     -ms-flex-pack: space-evenly;
+    //         justify-content: space-evenly;
     height: 100%;
     background: $off-white;
     font-size: 2.5em;
@@ -22,7 +22,7 @@
 }
 
 .index__finest-header {
-    margin: $m-size auto 0 auto;
+    margin: 7rem auto 0 auto;
 
     @include respond(phone) {
         font-size: $font-size-large;
@@ -324,8 +324,9 @@
             justify-content: space-evenly;
     background: $off-white;
     font-size: 2.5em;
-    margin-top: 20rem;
-    margin-bottom: 20rem;
+    height: 100%;
+    // margin-top: 20rem;
+    // margin-bottom: 20rem;
 
     @include respond(tab-port){
         -webkit-box-orient: vertical;
@@ -459,7 +460,7 @@
 }
 
 .index__customers-header{
-    margin: 2rem auto 2rem auto;
+    // margin: 2rem auto 2rem auto;
     padding: 5rem;
     text-align: center;
 
