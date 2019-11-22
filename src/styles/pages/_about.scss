@@ -7,13 +7,35 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
-    width: 80rem;
-    margin: 0 auto 0 auto;
+    // width: 80rem;
+    width: 55%;
+    margin: $xl-size auto $xl-size auto;
     font-size: 2em;
+
+    @include respond(tab-land) {
+        width: 60%;
+    }
+
+    @include respond(tab-port) {
+        width: 65%;
+    }
+
+    @include respond(tab-port) {
+        width: 75%;
+    }
+
+    @include respond(big-desktop) {
+        width: 45%;
+    }
 }
 
 .about-paragraph {
     margin-bottom: 2rem;
     line-height: 1.5;
+}
+
+#about__story-text {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: $l-size;
 }

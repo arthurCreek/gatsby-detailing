@@ -11,8 +11,9 @@ const About = () =>  (
             </div>
         </div>
 
-        <section className="section about-section">
+        <section className="sabout-section">
             <div className="about-container">
+                <p><span id="about__story-text">Our Story</span></p>
                 <p className="about-paragraph">Gatsby Detailing was established in 1993 by Arthur Creek, from his love and passion of cars. It continues today in the same tradition and commitment to excellence since day one. This passion has made Gatsby Detailing of Orange County, the finest automobile detailing company for your automobiles needs.</p>
                 <p className="about-paragraph">For over 25 years, Arthur has applied his passion, knowledge, and skills to each and every customers automobile that he has given his labor of love. He understands that a customer is not just looking for someone who can detail their car, but someone with the passion to apply that something extra, and to treat each automobile as if were his own. David takes pride in his work and he displays that commitment and skill for each customer, and the testimonials and raves only demonstrate his abilities.</p>
                 <p className="about-paragraph">The reality is that detailing a vehicle takes time and knowledge. This system combined with the products we use cannot be found at your local auto parts store or car wash.</p>
