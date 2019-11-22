@@ -2,7 +2,9 @@
     color: $color-white;
     text-transform: uppercase;
 
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+
+            backface-visibility: hidden;
     margin-bottom: 6rem;
 
     &--main {
@@ -11,9 +13,13 @@
         font-weight: 400;
         letter-spacing: 3.5rem;
     
-        animation-name: moveInLeft;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
+        -webkit-animation-name: moveInLeft;
+    
+                animation-name: moveInLeft;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
 
         @include respond(tab-land){
             font-size: 6rem;
@@ -45,7 +51,8 @@
         font-size: 3rem;
         font-weight: 700;
         letter-spacing: 1.75rem;
-        animation: moveInRight 1s ease-out;
+        -webkit-animation: moveInRight 1s ease-out;
+                animation: moveInRight 1s ease-out;
 
         @include respond(phone) {
             font-size: 2rem;

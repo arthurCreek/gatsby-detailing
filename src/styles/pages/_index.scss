@@ -4,9 +4,16 @@
 
 **********************/
 .index__finest-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     height: 100%;
     background: $off-white;
     font-size: 2.5em;
@@ -24,13 +31,25 @@
 }
 
 .index__finest-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; 
 
     @include respond(tab-land) {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     @include respond(phone) {
         font-size: $font-size-large;
@@ -38,8 +57,13 @@
 }
 
 .index__finest-body--text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: auto 0 auto 20rem;
     width: 30vw;
 
@@ -66,10 +90,12 @@
 
     &-photo {
         width: 25rem;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        -webkit-box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+                box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
         border-radius: 2px;
         position: absolute;
         z-index: 10;
+        -webkit-transition: all .2s;
         transition: all .2s;
         outline-offset: 2rem;
 
@@ -84,7 +110,8 @@
 
         @include respond(big-desktop) {
             width: 30rem;
-            box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+            -webkit-box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+                    box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
         }
 
         &-p1 {
@@ -108,7 +135,8 @@
             @include respond(big-desktop)  {
                 right: 55rem;
                 top: 25rem;
-                transform: scale(1.2);
+                -webkit-transform: scale(1.2);
+                        transform: scale(1.2);
             }
         }
 
@@ -133,7 +161,8 @@
             @include respond(big-desktop)  {
                 right: 35rem;
                 top: -8rem;
-                transform: scale(1.3);
+                -webkit-transform: scale(1.3);
+                        transform: scale(1.3);
             }
         }
 
@@ -158,32 +187,46 @@
             @include respond(big-desktop)  {
                 right: 25rem;
                 top: -10rem;
-                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                        transform: scale(1.1);
             }
         }
 
         &:hover {
             outline: 1.5rem solid $color-orange;
-            transform: scale(1.05) translateY(-.5rem);
-            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            -webkit-transform: scale(1.05) translateY(-.5rem);
+                    transform: scale(1.05) translateY(-.5rem);
+            -webkit-box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+                    box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
             z-index: 20;
         }
 
     }
 
     &:hover &__photo:not(:hover) {
-        transform: scale(.95);
+        -webkit-transform: scale(.95);
+                transform: scale(.95);
     }
 
 
     @include respond(tab-land) {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
     }
 
     @include respond(phone) {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 }
 
@@ -203,6 +246,7 @@
 
 **********************/
 .index__popular {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(251, 86, 3, 0.6)), to(rgba(251, 86, 3, 0.3))),url(.././images/mercedez.jpg);
     background-image: linear-gradient(rgba(251, 86, 3, 0.6), rgba(251, 86, 3, 0.3)),url(.././images/mercedez.jpg);
     background-size: cover;
     background-position: top;
@@ -211,9 +255,16 @@
 }
 
 .index__popular-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     height: 100%;
     font-size: 2.5em;
     color: white;
@@ -221,17 +272,31 @@
 }
 
 .index__popular-header {
-    margin: $m-size auto 0 auto;
+    margin: $l-size auto $m-size  auto;
+    padding: 5rem;
 }
 
 .index__popular-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center; 
+    margin: $l-size 0 $l-size 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; 
 
     @include respond(tab-port) {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin: $l-size 0 $l-size 0;
     }
 }
@@ -247,18 +312,31 @@
 
 **********************/
 .index__best-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     background: $off-white;
     font-size: 2.5em;
     margin-top: 20rem;
     margin-bottom: 20rem;
 
     @include respond(tab-port){
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         margin-top: 15rem;
         margin-bottom: 15rem;
     }
@@ -273,13 +351,25 @@
 }
 
 .index__best-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-around;
+        -ms-flex-pack: space-around;
+            justify-content: space-around;
 
     @include respond(tab-port){
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 }
 
@@ -294,9 +384,16 @@
 }
 
 .index__best-body--info-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: left;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
     margin-bottom: $l-size;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -336,6 +433,7 @@
 
 **********************/
 .index__customers {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(251, 86, 3, 0.6)), to(rgba(251, 86, 3, 0.3))),url(.././images/ferrari-min.jpg);
     background-image: linear-gradient(rgba(251, 86, 3, 0.6), rgba(251, 86, 3, 0.3)),url(.././images/ferrari-min.jpg);
     background-size: cover;
     background-position: top;
@@ -345,16 +443,24 @@
 }
 
 .index__customers-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
+    // display: -webkit-box;
+    // display: -ms-flexbox;
+    // display: flex;
+    // -webkit-box-orient: vertical;
+    // -webkit-box-direction: normal;
+    //     -ms-flex-direction: column;
+    //         flex-direction: column;
+    // -webkit-box-pack: space-evenly;
+    //     -ms-flex-pack: space-evenly;
+    //         justify-content: space-evenly;
+    // height: 100%;
     // background: $off-white;
     font-size: 2.5em;
 }
 
 .index__customers-header{
-    margin: $m-size auto 0 auto;
+    margin: 2rem auto 2rem auto;
+    padding: 5rem;
     text-align: center;
 
     &::after {
@@ -369,13 +475,25 @@
 }
 
 .index__customers-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-around;
+        -ms-flex-pack: space-around;
+            justify-content: space-around;
 
     @include respond(tab-port) {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
 }
@@ -438,7 +556,9 @@ cite {
 }
 
 .index__portfolio-footer {
-    margin: 0 auto $xl-size auto;
+    margin: 3rem 0 3rem 0;
+    padding: 5rem;
+    text-align: center;
 }
 
 /*********************
@@ -447,10 +567,19 @@ cite {
 
 **********************/
 .index__call-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: left;
+    // display: -webkit-box;
+    // display: -ms-flexbox;
+    // display: flex;
+    // -webkit-box-orient: vertical;
+    // -webkit-box-direction: normal;
+    //     -ms-flex-direction: column;
+    //         flex-direction: column;
+    // -webkit-box-pack: justify;
+    //     -ms-flex-pack: justify;
+    //         justify-content: space-between;
+    // -webkit-box-align: left;
+    //     -ms-flex-align: left;
+    //         align-items: left;
     font-size: 2.5em;
 
     background-image: linear-gradient(105deg, 
@@ -461,7 +590,8 @@ cite {
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+    -webkit-box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+            box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
     max-width: 114rem;
     margin: 10% auto;
     height: 50rem;
@@ -477,13 +607,20 @@ cite {
     }
 
     @include respond(tab-port) {
+        background-image: -webkit-gradient(linear, 
+        left top, right top, 
+        from(rgba($color-orange, .7)),
+        to(rgba($color-orange, .7))),
+        url(.././images/gtr-min.jpg);
         background-image: linear-gradient(to right, 
         rgba($color-orange, .7) 0%,
         rgba($color-orange, .7) 100%),
         url(.././images/gtr-min.jpg);
 
         width: 60rem;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         text-align: center;
     }
 
@@ -512,11 +649,19 @@ cite {
 }
 
 .index__call-info--call-location {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 
     @include respond(tab-port) {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     @include respond(phone) {
@@ -534,10 +679,15 @@ cite {
 }
 
 .index__call-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
-    @include respond(phone) {
-        width: 80vw;
-    }
+    // @include respond(phone) {
+    //     width: 80vw;
+    // }
 }
