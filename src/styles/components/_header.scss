@@ -44,6 +44,7 @@
 
     @include respond(tab-port) {
         height: 32rem;
+        margin-left: 0;
         display: none;
     }
 }
@@ -87,8 +88,9 @@
         // text-align: center;
 
         @include respond(tab-land) {
-            width: 14rem;
+            width: 12rem;
             height: $header-height;
+            font-size: 2.5rem;
         }
         @include respond(tab-port) {
             width: 100vw;
@@ -238,5 +240,8 @@
 } 
 
 .header__open {
-    height: 42rem;
+    @include respond(tab-port) {
+        height: 42rem;
+    }
+    
 }
