@@ -4,15 +4,38 @@
     background: #f7f7f7;
     position: fixed;
     z-index: 100;
-    width: 70%;
-    height: 85px;
+    width: 100%;
+    height: $header-height;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    margin: $m-size auto 0 auto;
-    border-radius: 25px;
 
+    // @include respond(tab-port) {
+    //     height: 42rem;
+    //     background: #f7f7f7;
+    // }
+}
+
+.header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: $header-height;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+.header__nav {
+    height: $header-height;
+
+    @include respond(tab-port) {
+        height: 50rem;
+        display: none;
+    }
 }
 
 .header__list {
@@ -21,13 +44,122 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    font-size: $font-size-large;
-    padding: $l-size 0;
+    font-size: 3em;
+    height: $header-height;
+
+    @include respond(tab-land) {
+        font-size: 3em;
+    }
+    @include respond(tab-port) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15rem;
+        height: 0;
+    }
+
+
+    li {
+        height: $header-height;
+        width: 16rem;
+        // text-align: center;
+
+        @include respond(tab-land) {
+            width: 14rem;
+            height: $header-height;
+        }
+        @include respond(tab-port) {
+            width: 100vw;
+            height: 6rem;
+        }
+        :hover {
+            background-color: $color-orange;
+            color: $off-white;
+        }
+    }
+
 }
 
 .header__list-item {
-    padding-top: 10px;
     text-decoration: none;
     // color: white;
     color: #090C0E;
+    height: $header-height;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    @include respond(tab-port) {
+        height: 6rem;
+    }
+
+}
+
+.header__contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: #090C0E;
+    font-size: 3em;
+    color: #090C0E;
+    background-color: $color-orange; 
+    width: 20rem;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 14rem;
+        width: 100vw;
+        height: 6rem;
+        padding: 2rem;
+        display: none;
+    }
+
+    :hover {
+        color: $off-white;
+    }
+}
+
+.logo {
+    height: 6rem;
+
+    @include respond(tab-port){
+        height: 8rem;
+    }
+}
+
+.header__menu-logo {
+    width: 7rem;
+    height: 7rem;
+    display: none;
+
+    @include respond(tab-port){
+        align-self: flex-end;
+        display: initial;
+        // position: absolute;
+        cursor: pointer;
+        margin-top: -8rem;
+        margin-right: 4rem;
+    }
+    @include respond(phone){
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+#header-logo {
+    list-style: none;
+    margin-top: $s-size;
+    margin-left: $xl-size;
+
+    @include respond(tab-land){
+        margin-top: $m-size;
+        margin-left: $xl-size;
+    }
+    @include respond(tab-port){
+        margin-top: $s-size;
+        margin-left: $l-size;
+    }
 }
