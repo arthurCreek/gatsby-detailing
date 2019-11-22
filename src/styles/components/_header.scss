@@ -11,10 +11,9 @@
     right: 0;
     bottom: 0;
 
-    // @include respond(tab-port) {
-    //     height: 42rem;
-    //     background: #f7f7f7;
-    // }
+    @include respond(phone) {
+        height: $header-mobile-height;
+    }
 }
 
 .header__container {
@@ -160,6 +159,7 @@
 
     @include respond(tab-port) {
         flex-direction: column;
+        margin-top: 2.5rem;
     }
 }
 
@@ -220,6 +220,8 @@
     @include respond(phone){
         width: 6rem;
         height: 6rem;
+        margin-top: -6.3rem;
+        margin-right: 2.5rem;
     }
 }
 
@@ -238,6 +240,12 @@
         margin-left: $l-size;
         height: 8rem;
         width: 8rem;
+    }
+
+    @include respond(phone) {
+        height: 6rem;
+        width: 6rem;
+        margin-left: $m-size;
     }
 }
 
