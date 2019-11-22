@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
+import { Link } from "gatsby";
 import SEO from "../components/seo";
 import Img from 'gatsby-image';
 import best_icon_1 from '../images/medal.svg';
@@ -16,7 +17,7 @@ const IndexPage = (props) => (
           <span className="hero-primary--sub">We love your car as much as you do</span>
         </h1>
 
-        <a href="#" className="btn btn--white btn--animated">Discover Our Services</a>
+        <a href="#section-popular" className="btn btn--white btn--animated">Discover Our Services</a>
       </div>
     </div>
 
@@ -50,13 +51,13 @@ const IndexPage = (props) => (
           </div>
         </div>
         <div className="index__finest-footer">
-          <a className="btn-ghost" href="#">Learn More About Us</a>
+          <Link className="btn-ghost" to="/about/">Learn More About Us</Link>
         </div>
       </div>
     </section>
 
 
-    <section className="section-boxes index__popular">
+    <section className="section-boxes index__popular" id="section-popular">
       <div className="index__popular-container">
         <div className="index__popular-header">
           <h2>Most Popular Services</h2>
@@ -93,7 +94,7 @@ const IndexPage = (props) => (
           </div>
         </div>
         <div className="index__popular-footer">
-          <a className="btn-ghost--popular" href="#">Discover Our Services</a>
+          <Link className="btn-ghost--popular" to="/services/">Discover Our Services</Link>
         </div>
       </div>
     </section>
@@ -171,7 +172,7 @@ const IndexPage = (props) => (
           </div>
         </div>
         <div className="index__portfolio-footer">
-          <a className="btn-ghost--portfolio" href="#">See Our Portfolio</a>
+          <Link className="btn-ghost--portfolio" to="/portfolio/">See Our Portfolio</Link>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "gatsby";
 
 const Footer = () => {
     return (
@@ -7,11 +8,11 @@ const Footer = () => {
                 <div className="footer__container--link-credit">
                     <div className="footer__nav">
                         <ul>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><Link className="footer__nav-link" to="/about/">About Us</Link></li>
+                            <li><Link className="footer__nav-link" to="/services/">Services</Link></li>
+                            <li><Link className="footer__nav-link" to="/portfolio/">Portfolio</Link></li>
+                            <li><Link className="footer__nav-link" to="/faq/">FAQs</Link></li>
+                            <li><Link className="footer__nav-link" to="/contact_us/">Contact Us</Link></li>
                         </ul>
                     </div>
                     <div className="footer__credits">

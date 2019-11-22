@@ -15,21 +15,22 @@
             display: inline-block;
             margin-right: $m-size;
 
-            a:link,
-            a:visited {
+            :link,
+            :visited {
                 text-decoration: none;
                 border: 0;
                 color: #888;
                 -webkit-transition: color 0.2s;
                 transition: color 0.2s;
             }
-
-            a:hover,
-            a:active {
+        
+            :hover,
+            :active {
                 color: #ddd;
             }
         }
     }
+
 }
 
 .footer__container--link-credit {
