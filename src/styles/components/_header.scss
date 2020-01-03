@@ -139,17 +139,6 @@
 
 .header__contact {
     @include respond(tab-port) {
-        // -webkit-box-orient: vertical;
-        // -webkit-box-direction: normal;
-        //     -ms-flex-direction: column;
-        //         flex-direction: column;
-        // -webkit-box-pack: center;
-        //     -ms-flex-pack: center;
-        //         justify-content: center;
-        // margin-top: 14rem;
-        // width: 100vw;
-        // height: 6rem;
-        // padding: 2rem;
         display: none;
     }
 }
@@ -187,18 +176,9 @@
     height: 100%;
 
     @include respond(tab-port) {
-        // -webkit-box-orient: vertical;
-        // -webkit-box-direction: normal;
-        //     -ms-flex-direction: column;
-        //         flex-direction: column;
-        // -webkit-box-pack: center;
-        //     -ms-flex-pack: center;
-        //         justify-content: center;
-        // margin-top: 14rem;
         width: 100vw;
         height: 6rem;
         padding: 2rem;
-        // display: none;
     }
 
     :hover {
@@ -215,7 +195,6 @@
         -ms-flex-item-align: end;
             align-self: flex-end;
         display: initial;
-        // position: absolute;
         cursor: pointer;
         margin-top: -8rem;
         margin-right: 4rem;
